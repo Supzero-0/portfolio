@@ -2,5 +2,5 @@ import React from "react";
 import "./About.css";
 
 export default function About() {
-  return <h1>About</h1>;
+  return <section id="about">About</section>;
 }
