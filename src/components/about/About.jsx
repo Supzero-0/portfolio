@@ -19,13 +19,13 @@ export default function About() {
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
-              <FaAward className="about_icon" />
+              <FaAward className="about__icon" />
               <h5>Experience</h5>
               <small>1+ Year Working</small>
             </article>
 
             <article className="about__card">
-              <FaFolderOpen className="about_icon" />
+              <FaFolderOpen className="about__icon" />
               <h5>Projects</h5>
               <small>7+ Completed</small>
             </article>
