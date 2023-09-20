@@ -6,7 +6,7 @@ import {
   AiOutlineBook,
   AiOutlineMessage,
 } from "react-icons/ai";
-import { RiServiceLine } from "react-icons/ri";
+import { RiBookOpenLine } from "react-icons/ri";
 
 export default function Nav() {
   // State
@@ -36,11 +36,11 @@ export default function Nav() {
         <AiOutlineBook />
       </a>
       <a
-        href="#services"
-        onClick={() => setActiveNav("#services")}
-        className={activeNav === "#services" ? "active" : ""}
+        href="#portfolio"
+        onClick={() => setActiveNav("#portfolio")}
+        className={activeNav === "#portfolio" ? "active" : ""}
       >
-        <RiServiceLine />
+        <RiBookOpenLine />
       </a>
       <a
         href="#contact"
