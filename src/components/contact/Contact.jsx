@@ -1,9 +1,32 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import { FiMail } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
 
 export default function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_kz8g2yd",
+        "template_c2tvuja",
+        form.current,
+        "0GO8XILgXV3AbJgQg"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
@@ -28,8 +51,9 @@ export default function Contact() {
             </a>
           </article>
         </div>
+
         {/* END OF CONTACT OPTIONS */}
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
             name="name"
