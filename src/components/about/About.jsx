@@ -2,12 +2,15 @@ import React from "react";
 import "./About.css";
 import ME from "../../assets/about.png";
 import { FaAward, FaFolderOpen } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
+  const [t, i18n] = useTranslation("common");
+
   return (
     <section id="about">
-      <h5>Get to Know</h5>
-      <h2>About</h2>
+      <h5>{t("about.know")}</h5>
+      <h2>{t("about.about")}</h2>
 
       <div className="container about__container">
         <div className="about__me">
@@ -20,26 +23,21 @@ export default function About() {
           <div className="about__cards">
             <article className="about__card">
               <FaAward className="about__icon" />
-              <h5>Experience</h5>
-              <small>1+ Year Working</small>
+              <h5>{t("about.experience")}</h5>
+              <small>{t("about.duration")}</small>
             </article>
 
             <article className="about__card">
               <FaFolderOpen className="about__icon" />
-              <h5>Projects</h5>
-              <small>7+ Completed</small>
+              <h5>{t("about.project")}</h5>
+              <small>{t("about.completed")}</small>
             </article>
           </div>
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
-            quaerat quod dolor. Et facilis voluptatibus iste repellat, ex omnis
-            animi provident exercitationem cumque tenetur explicabo, laborum
-            consectetur! Odit, nulla quasi.
-          </p>
+          <p>{t("about.description")}</p>
 
           <a href="#contact" className="btn btn-primary">
-            Let's Talk
+            {t("about.button")}
           </a>
         </div>
       </div>

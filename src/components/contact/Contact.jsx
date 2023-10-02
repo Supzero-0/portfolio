@@ -3,8 +3,12 @@ import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import { FiMail } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+  const [t] = useTranslation("common");
+
+  // Email
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -29,8 +33,8 @@ export default function Contact() {
 
   return (
     <section id="contact">
-      <h5>Get In Touch</h5>
-      <h2>Contact Me</h2>
+      <h5>{t("contact.touch")}</h5>
+      <h2>{t("contact.title")}</h2>
 
       <div className="container contact__container">
         <div className="contact__options">
@@ -39,7 +43,7 @@ export default function Contact() {
             <h4>Email</h4>
             <h5>mat.lecanu@gmail.com</h5>
             <a href="mailto:mat.lecanu@gmail.com" target="_blank">
-              Send a message
+              {t("contact.send")}
             </a>
           </article>
           <article className="contact__option">
@@ -47,7 +51,7 @@ export default function Contact() {
             <h4>Linked In</h4>
             <h5>Mathieu LECANU</h5>
             <a href="https://linkedin.com/in/mathieulecanu/" target="_blank">
-              Add me
+              {t("contact.add")}
             </a>
           </article>
         </div>
@@ -57,18 +61,23 @@ export default function Contact() {
           <input
             type="text"
             name="name"
-            placeholder="Your Full Name"
+            placeholder={t("contact.name")}
             required
           />
-          <input type="email" name="email" placeholder="Your Email" required />
+          <input
+            type="email"
+            name="email"
+            placeholder={t("contact.email")}
+            required
+          />
           <textarea
             name="message"
             rows="7"
-            placeholder="Your Message"
+            placeholder={t("contact.message")}
             required
           />
           <button type="submit" className="btn btn-primary">
-            Send Message
+            {t("contact.send-message")}
           </button>
         </form>
       </div>

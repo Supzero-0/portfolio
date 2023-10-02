@@ -9,24 +9,29 @@ import {
   FaNodeJs,
 } from "react-icons/fa";
 import { SiTailwindcss, SiMysql, SiMongodb } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 
 export default function Experience() {
+  const [t, i18n] = useTranslation("common");
+
   return (
     <section id="experience">
-      <h5>What Skills I Have</h5>
-      <h2>My Experience</h2>
+      <h5>{t("experience.skill")}</h5>
+      <h2>{t("experience.title")}</h2>
 
       <div className="container experience__container">
         {/* FRONTEND */}
 
         <div className="experience__frontend">
-          <h3>Frontend Development</h3>
+          <h3>{t("experience.frontend")}</h3>
           <div className="experience__content">
             <article className="experience__details">
               <FaHtml5 className="experience__icon" />
               <div>
                 <h4>HTML</h4>
-                <small className="text-light">Experienced</small>
+                <small className="text-light">
+                  {t("experience.experienced")}
+                </small>
               </div>
             </article>
 
@@ -34,7 +39,9 @@ export default function Experience() {
               <FaCss3Alt className="experience__icon" />
               <div>
                 <h4>CSS</h4>
-                <small className="text-light">Intermediate</small>
+                <small className="text-light">
+                  {t("experience.intermediate")}
+                </small>
               </div>
             </article>
 
@@ -42,7 +49,9 @@ export default function Experience() {
               <FaBootstrap className="experience__icon" />
               <div>
                 <h4>Bootstrap</h4>
-                <small className="text-light">Intermediate</small>
+                <small className="text-light">
+                  {t("experience.intermediate")}
+                </small>
               </div>
             </article>
 
@@ -50,7 +59,7 @@ export default function Experience() {
               <SiTailwindcss className="experience__icon" />
               <div>
                 <h4>Tailwind</h4>
-                <small className="text-light">Basic</small>
+                <small className="text-light">{t("experience.basic")}</small>
               </div>
             </article>
 
@@ -58,7 +67,9 @@ export default function Experience() {
               <FaReact className="experience__icon" />
               <div>
                 <h4>React</h4>
-                <small className="text-light">Intermediate</small>
+                <small className="text-light">
+                  {t("experience.intermediate")}
+                </small>
               </div>
             </article>
 
@@ -66,7 +77,9 @@ export default function Experience() {
               <FaReact className="experience__icon" />
               <div>
                 <h4>React Native</h4>
-                <small className="text-light">Intermediate</small>
+                <small className="text-light">
+                  {t("experience.intermediate")}
+                </small>
               </div>
             </article>
           </div>
@@ -74,13 +87,15 @@ export default function Experience() {
         {/* BACKEND */}
 
         <div className="experience__backend">
-          <h3>Backend Development</h3>
+          <h3>{t("experience.backend")}</h3>
           <div className="experience__content">
             <article className="experience__details">
               <FaSymfony className="experience__icon" />
               <div>
                 <h4>PHP / Symfony</h4>
-                <small className="text-light">Experienced</small>
+                <small className="text-light">
+                  {t("experience.experienced")}
+                </small>
               </div>
             </article>
 
@@ -88,7 +103,9 @@ export default function Experience() {
               <FaNodeJs className="experience__icon" />
               <div>
                 <h4>Node JS</h4>
-                <small className="text-light">Intermediate</small>
+                <small className="text-light">
+                  {t("experience.intermediate")}
+                </small>
               </div>
             </article>
 
@@ -96,7 +113,9 @@ export default function Experience() {
               <SiMysql className="experience__icon" />
               <div>
                 <h4>MySQL</h4>
-                <small className="text-light">Intermediate</small>
+                <small className="text-light">
+                  {t("experience.intermediate")}
+                </small>
               </div>
             </article>
 
@@ -104,7 +123,7 @@ export default function Experience() {
               <SiMongodb className="experience__icon" />
               <div>
                 <h4>MongoDB</h4>
-                <small className="text-light">Basic</small>
+                <small className="text-light">{t("experience.basic")}</small>
               </div>
             </article>
           </div>
