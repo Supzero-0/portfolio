@@ -28,6 +28,19 @@ nav a:hover {
 }
 
 nav a.active {
-    background: var(--color-bg);
-    color: var(--color-white);
+    background: var(--color-primary);
+    color: var(--color-bg);
+}
+
+nav select {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    color: var(--color-light);
+    font-size: 1.1rem;
+}
+
+nav select option {
+    background: var(--color-bg-variant);
+    color: var(--color-light);
 }

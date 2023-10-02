@@ -1,0 +1,118 @@
+{
+  "header": {
+    "hello": "Bonjour, je suis",
+    "job": "Développeur Fullstack",
+    "scroll": "Faites défiler"
+  },
+  "cta": {
+    "cv": "Télécharger le CV",
+    "talk": "Discutons"
+  },
+  "about": {
+    "know": "Apprenez à me connaitre",
+    "about": "A propos de moi",
+    "experience": "Experience",
+    "duration": "1+ Année de Travail",
+    "project": "Projets",
+    "completed": "7+ Terminés",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla quaerat quod dolor. Et facilis voluptatibus iste repellat, ex omnis animi provident exercitationem cumque tenetur explicabo, laborum consectetur! Odit, nulla quasi.",
+    "button": "Discutons"
+  },
+  "experience": {
+    "skill": "Quelles Compétences je possède",
+    "title": "Mes Expériences",
+    "frontend": "Développement Frontend",
+    "backend": "Développement Backend",
+    "basic": "Basique",
+    "intermediate": "Intermediaire",
+    "experienced": "Expérimenté"
+  },
+  "portfolio": {
+    "work": "Mes Travaux Récents",
+    "title": "Portefeuille",
+    "demo": "Démo en Direct",
+    "projects": [
+      {
+        "image": "src/assets/portfolio.png",
+        "name": "portfolio",
+        "title": "This is a portfolio item title",
+        "github": "https://github.com/Supzero-0/portfolio",
+        "demo": "https://supzero-0.github.io/portfolio/"
+      },
+      {
+        "image": "src/assets/portfolio.png",
+        "name": "portfolio2",
+        "title": "This is a portfolio item title2",
+        "github": "https://github.com/Supzero-0/portfolio",
+        "demo": "https://supzero-0.github.io/portfolio/"
+      },
+      {
+        "image": "src/assets/portfolio.png",
+        "name": "portfolio3",
+        "title": "This is a portfolio item title3",
+        "github": "https://github.com/Supzero-0/portfolio",
+        "demo": "https://supzero-0.github.io/portfolio/"
+      },
+      {
+        "image": "src/assets/portfolio.png",
+        "name": "portfolio4",
+        "title": "This is a portfolio item title4",
+        "github": "https://github.com/Supzero-0/portfolio",
+        "demo": "https://supzero-0.github.io/portfolio/"
+      },
+      {
+        "image": "src/assets/portfolio.png",
+        "name": "portfolio5",
+        "title": "This is a portfolio item title5",
+        "github": "https://github.com/Supzero-0/portfolio",
+        "demo": "https://supzero-0.github.io/portfolio/"
+      },
+      {
+        "image": "src/assets/portfolio.png",
+        "name": "portfolio6",
+        "title": "This is a portfolio item title6",
+        "github": "https://github.com/Supzero-0/portfolio",
+        "demo": "https://supzero-0.github.io/portfolio/"
+      }
+    ]
+  },
+  "testimonial": {
+    "review": "Avis de collègues et formateurs",
+    "title": "Témoignages",
+    "data": [
+      {
+        "avatar": "src/assets/about.png",
+        "name": "Mat",
+        "review": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt possimus natus similique laboriosam eaque. Sunt alias necessitatibus ipsa neque vitae, ratione eius, dicta ut impedit minus consequuntur esse, magnam optio?"
+      },
+      {
+        "avatar": "src/assets/about.png",
+        "name": "Anthony",
+        "review": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt possimus natus similique laboriosam eaque. Sunt alias necessitatibus ipsa neque vitae, ratione eius, dicta ut impedit minus consequuntur esse, magnam optio?"
+      },
+      {
+        "avatar": "src/assets/about.png",
+        "name": "Driss",
+        "review": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt possimus natus similique laboriosam eaque. Sunt alias necessitatibus ipsa neque vitae, ratione eius, dicta ut impedit minus consequuntur esse, magnam optio?"
+      }
+    ]
+  },
+  "contact": {
+    "touch": "Restons en contact",
+    "title": "Contactez-moi",
+    "send": "Envoyez un message",
+    "add": "Ajoutez-moi",
+    "name": "Votre nom complet",
+    "email": "Votre Email",
+    "message": "Votre Message",
+    "send-message": "Envoyer le Message"
+  },
+  "footer": {
+    "home": "Accueil",
+    "about": "A propos",
+    "experience": "Expérience",
+    "portfolio": "Portefeuille",
+    "testimonials": "Témoignagnes",
+    "contact": "Contact"
+  }
+}

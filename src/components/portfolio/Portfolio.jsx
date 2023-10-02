@@ -1,15 +1,17 @@
 import React from "react";
 import "./Portfolio.css";
-import PORTFOLIO from "../../assets/portfolio.png";
+import { useTranslation } from "react-i18next";
 
 export default function Portfolio() {
+  const [t] = useTranslation("common");
+
   return (
     <section id="portfolio">
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      <h5>{t("portfolio.work")}</h5>
+      <h2>{t("portfolio.title")}</h2>
 
       <div className="container portfolio__container">
-        {projects.map((project) => (
+        {t("portfolio.projects", { returnObjects: true }).map((project) => (
           <article className="portfolio__item" key={project.name}>
             <div className="portfolio__item-image">
               <img src={project.image} alt={project.name} />
@@ -24,7 +26,7 @@ export default function Portfolio() {
                 className="btn btn-primary"
                 target="_blank"
               >
-                Live Demo
+                {t("portfolio.demo")}
               </a>
             </div>
           </article>
@@ -33,48 +35,3 @@ export default function Portfolio() {
     </section>
   );
 }
-
-const projects = [
-  {
-    image: PORTFOLIO,
-    name: "portfolio",
-    title: "This is a portfolio item title",
-    github: "https://github.com/Supzero-0/portfolio",
-    demo: "https://supzero-0.github.io/portfolio/",
-  },
-  {
-    image: PORTFOLIO,
-    name: "portfolio",
-    title: "This is a portfolio item title",
-    github: "https://github.com/Supzero-0/portfolio",
-    demo: "https://supzero-0.github.io/portfolio/",
-  },
-  {
-    image: PORTFOLIO,
-    name: "portfolio",
-    title: "This is a portfolio item title",
-    github: "https://github.com/Supzero-0/portfolio",
-    demo: "https://supzero-0.github.io/portfolio/",
-  },
-  {
-    image: PORTFOLIO,
-    name: "portfolio",
-    title: "This is a portfolio item title",
-    github: "https://github.com/Supzero-0/portfolio",
-    demo: "https://supzero-0.github.io/portfolio/",
-  },
-  {
-    image: PORTFOLIO,
-    name: "portfolio",
-    title: "This is a portfolio item title",
-    github: "https://github.com/Supzero-0/portfolio",
-    demo: "https://supzero-0.github.io/portfolio/",
-  },
-  {
-    image: PORTFOLIO,
-    name: "portfolio",
-    title: "This is a portfolio item 2",
-    github: "https://github.com/Supzero-0/portfolio",
-    demo: "https://supzero-0.github.io/portfolio/",
-  },
-];
