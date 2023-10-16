@@ -3,6 +3,13 @@ import react from '@vitejs/plugin-react-swc'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/",
+  base: "./",
   plugins: [react()],
+  build: {
+    outDir: 'dist',
+    commonjsOptions: {
+      transformMixedEsModules: true,
+    },
+  },
+  publicDir: 'assets'
 })

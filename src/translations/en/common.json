@@ -31,71 +31,12 @@
     "work": "My Recent Work",
     "title": "Portfolio",
     "demo": "Live Demo",
-    "projects": [
-      {
-        "image": "src/assets/portfolio.png",
-        "name": "portfolio",
-        "title": "This is a portfolio item title",
-        "github": "https://github.com/Supzero-0/portfolio",
-        "demo": "https://supzero-0.github.io/portfolio/"
-      },
-      {
-        "image": "src/assets/portfolio.png",
-        "name": "portfolio2",
-        "title": "This is a portfolio item title2",
-        "github": "https://github.com/Supzero-0/portfolio",
-        "demo": "https://supzero-0.github.io/portfolio/"
-      },
-      {
-        "image": "src/assets/portfolio.png",
-        "name": "portfolio3",
-        "title": "This is a portfolio item title3",
-        "github": "https://github.com/Supzero-0/portfolio",
-        "demo": "https://supzero-0.github.io/portfolio/"
-      },
-      {
-        "image": "src/assets/portfolio.png",
-        "name": "portfolio4",
-        "title": "This is a portfolio item title4",
-        "github": "https://github.com/Supzero-0/portfolio",
-        "demo": "https://supzero-0.github.io/portfolio/"
-      },
-      {
-        "image": "src/assets/portfolio.png",
-        "name": "portfolio5",
-        "title": "This is a portfolio item title5",
-        "github": "https://github.com/Supzero-0/portfolio",
-        "demo": "https://supzero-0.github.io/portfolio/"
-      },
-      {
-        "image": "src/assets/portfolio.png",
-        "name": "portfolio6",
-        "title": "This is a portfolio item title6",
-        "github": "https://github.com/Supzero-0/portfolio",
-        "demo": "https://supzero-0.github.io/portfolio/"
-      }
-    ]
+    "portfolio": "Creation of an online portfolio"
   },
   "testimonial": {
     "review": "Review from peers and trainers",
     "title": "Testimonials",
-    "data" : [
-      {
-        "avatar": "src/assets/about.png",
-        "name": "Mat",
-        "review": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt possimus natus similique laboriosam eaque. Sunt alias necessitatibus ipsa neque vitae, ratione eius, dicta ut impedit minus consequuntur esse, magnam optio?"
-      },
-      {
-        "avatar": "src/assets/about.png",
-        "name": "Anthony",
-        "review": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt possimus natus similique laboriosam eaque. Sunt alias necessitatibus ipsa neque vitae, ratione eius, dicta ut impedit minus consequuntur esse, magnam optio?"
-      },
-      {
-        "avatar": "src/assets/about.png",
-        "name": "Driss",
-        "review": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt possimus natus similique laboriosam eaque. Sunt alias necessitatibus ipsa neque vitae, ratione eius, dicta ut impedit minus consequuntur esse, magnam optio?"
-      }
-    ]
+    "mathieu": "In construction"
   },
   "contact": {
     "touch": "Get in touch",

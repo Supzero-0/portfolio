@@ -29,15 +29,15 @@ export default function Testimonials() {
         navigation
         pagination={{ clickable: true }}
       >
-        {t("testimonial.data", { returnObjects: true }).map((testimonial) => (
-          <SwiperSlide className="testimonial" key={testimonial.name}>
-            <div className="testimonial__avatar">
-              <img src={testimonial.avatar} alt={testimonial.name} />
-            </div>
-            <h5 className="testimonial__name">{testimonial.name}</h5>
-            <small className="testimonial__review">{testimonial.review}</small>
-          </SwiperSlide>
-        ))}
+        <SwiperSlide className="testimonial">
+          <div className="testimonial__avatar">
+            <img src={ME} alt="Mathieu" />
+          </div>
+          <h5 className="testimonial__name">Mathieu</h5>
+          <small className="testimonial__review">
+            {t("testimonial.mathieu")}
+          </small>
+        </SwiperSlide>
       </Swiper>
     </section>
   );

@@ -94,7 +94,7 @@ export default function Experience() {
               <div>
                 <h4>PHP / Symfony</h4>
                 <small className="text-light">
-                  {t("experience.experienced")}
+                  {t("experience.intermediate")}
                 </small>
               </div>
             </article>
